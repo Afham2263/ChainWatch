@@ -26,7 +26,7 @@
 
 ---
 
-## 🛠 Installation & Setup
+##  Installation & Setup
 
 ###  Clone the Repository
 ```bash
@@ -34,12 +34,12 @@ git clone https://github.com/Afham2263/ChainWatch.git
 cd ChainWatch
 ```
 
-### 📦 Install Dependencies
+###  Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### ▶ Run the Dashboard
+###  Run the Dashboard
 ```bash
 streamlit run dashboard.py
 ```
@@ -58,7 +58,7 @@ requests
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
 
 ---
