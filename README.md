@@ -3,6 +3,22 @@
 **ChainWatch** is a sleek and responsive crypto market dashboard built with Python and Streamlit. It pulls live data from the CoinGecko API, transforms it into a clean format, visualizes key metrics, and offers a one-click Excel export for offline analysis.
 
 ---
+## 🔗 Live Demo
+
+You can access the fully deployed version of ChainWatch here:
+
+👉 [https://chain-watch.streamlit.app/](https://chain-watch.streamlit.app/)
+
+No setup needed — just open the link in your browser. The dashboard displays:
+
+- Real-time cryptocurrency prices
+- Percentage change over 24 hours
+- Market cap and volume data
+- Automatically refreshes data on reload
+
+This demo is hosted on Streamlit Cloud and continuously pulls data from the CoinGecko API to ensure up-to-date market insights.
+
+Feel free to explore, analyze, and share feedback.
 
 ##  Features
 
