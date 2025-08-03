@@ -32,7 +32,7 @@ st.markdown("""
 
 # ---------------------- Title ---------------------- #
 st.markdown("""
-    <h1 style='text-align: center;'>🌟 Crypto Market Dashboard 🌟</h1>
+    <h1 style='text-align: center;'> Crypto Market Dashboard </h1>
     <hr style='border: 1px solid #333;'>
 """, unsafe_allow_html=True)
 
@@ -52,12 +52,12 @@ st.caption(f"Last updated: {datetime.now().strftime('%d %b %Y | %I:%M %p')}")
 
 # ---------------------- Metrics ---------------------- #
 col1, col2, col3 = st.columns(3)
-col1.metric("💰 Bitcoin", f"${df.iloc[0]['Price (USD)']:,}", f"{df.iloc[0]['24h Change (%)']}%")
-col2.metric("📈 Ethereum", f"${df.iloc[1]['Price (USD)']:,}", f"{df.iloc[1]['24h Change (%)']}%")
-col3.metric("🧦 Dogecoin", f"${df[df['Symbol'] == 'doge'].iloc[0]['Price (USD)']}", f"{df[df['Symbol'] == 'doge'].iloc[0]['24h Change (%)']}%")
+col1.metric(" Bitcoin", f"${df.iloc[0]['Price (USD)']:,}", f"{df.iloc[0]['24h Change (%)']}%")
+col2.metric(" Ethereum", f"${df.iloc[1]['Price (USD)']:,}", f"{df.iloc[1]['24h Change (%)']}%")
+col3.metric(" Dogecoin", f"${df[df['Symbol'] == 'doge'].iloc[0]['Price (USD)']}", f"{df[df['Symbol'] == 'doge'].iloc[0]['24h Change (%)']}%")
 
 # ---------------------- Table View ---------------------- #
-st.subheader("📊 Top 10 Cryptocurrencies")
+st.subheader(" Top 10 Cryptocurrencies")
 styled_df = df.style.format({
     "Price (USD)": "{:.2f}",
     "Market Cap": "{:,.0f}",
@@ -85,14 +85,14 @@ st.download_button(
 )
 
 # ---------------------- Charts ---------------------- #
-st.subheader("🔢 Price in USD")
+st.subheader(" Price in USD")
 st.bar_chart(df.set_index("Coin")["Price (USD)"])
 
-st.subheader("🔄 24h Price Change (%)")
+st.subheader(" 24h Price Change (%)")
 st.line_chart(df.set_index("Coin")["24h Change (%)"])
 
 # ---------------------- Footer ---------------------- #
 st.markdown("""
     <hr style='border: 1px solid #333;'>
-    <p style='text-align: center; color: gray;'>Built by Afham ❤️ | Powered by Streamlit & CoinGecko API</p>
+    <p style='text-align: center; color: gray;'>Built by Afham  | Powered by Streamlit & CoinGecko API</p>
 """, unsafe_allow_html=True)
